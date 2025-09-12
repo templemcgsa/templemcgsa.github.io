@@ -1,0 +1,120 @@
+/* Temple Colors */
+:root {
+    --cherry-red: #9D2235;
+    --yellow: #FFCD00;
+    --metallic-silver: #8A8D8F;
+    --silver: #C1C6C8;
+    --black: #000000;
+    --background: #f7f7f9;
+    --white: #fff;
+    --shadow: 0 2px 16px rgba(0,0,0,0.06);
+    --radius: 16px;
+    --transition: 0.18s cubic-bezier(.4,0,.2,1);
+}
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    margin: 0;
+    background: var(--background);
+    color: var(--black);
+    line-height: 1.7;
+    font-size: 1.08rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nunito Sans', 'Inter', Arial, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    margin-bottom: 0.7em;
+}
+
+header {
+    background: var(--cherry-red);
+    color: var(--white);
+    padding: 2rem 0 1.2rem 0;
+    text-align: center;
+    box-shadow: var(--shadow);
+    border-bottom: 3px solid var(--yellow);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    letter-spacing: 1.5px;
+    margin: 0;
+    font-weight: 800;
+}
+
+nav {
+    background: var(--white);
+    padding: 0.5rem 0;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(157,34,53,0.04);
+    border-bottom: 1px solid var(--silver);
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+}
+
+nav a {
+    color: var(--cherry-red);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.05rem;
+    padding: 0.45rem 1.1rem;
+    border-radius: var(--radius);
+    transition: background var(--transition), color var(--transition), box-shadow var(--transition);
+    position: relative;
+    outline: none;
+}
+
+nav a:hover,
+nav a:focus {
+    background: var(--yellow);
+    color: var(--black);
+    box-shadow: 0 2px 8px rgba(255,205,0,0.10);
+}
+
+main {
+    max-width: 820px;
+    margin: 2rem auto;
+    background: var(--white);
+    padding: 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    border: 1px solid var(--silver);
+}
+
+footer {
+    text-align: center;
+    padding: 1.2rem 0;
+    background: var(--white);
+    color: var(--metallic-silver);
+    margin-top: 2rem;
+    font-size: 0.98rem;
+    border-top: 1px solid var(--silver);
+    letter-spacing: 0.5px;
+}
+
+/* Utility classes for spacing */
+.mt-2 { margin-top: 2rem; }
+.mb-2 { margin-bottom: 2rem; }
+.p-2 { padding: 2rem; }
+
+/* Responsive Design */
+@media (max-width: 700px) {
+    header h1 {
+        font-size: 1.3rem;
+    }
+    main {
+        padding: 1rem;
+    }
+    nav {
+        gap: 0.5rem;
+        padding: 0.3rem 0;
+    }
+    nav a {
+        font-size: 0.98rem;
+        padding: 0.35rem 0.7rem;
+    }
+}
