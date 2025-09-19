@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Current Board — Temple MCGSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .board-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .board-card {
+            background: var(--white);
+            border: 1px solid var(--silver);
+            border-radius: 12px;
+            padding: 1rem;
+            text-align: center;
+        }
+        .board-photo {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 999px;
+            border: 3px solid var(--silver);
+            background: #f2f2f2;
+            margin: 0 auto 0.5rem auto;
+            display: block;
+        }
+        .field { width: 100%; box-sizing: border-box; margin-top: 0.4rem; }
+        .small { font-size: 0.95rem; color: var(--metallic-silver); }
+        .controls { display:flex; gap:0.5rem; justify-content:center; margin-top:0.6rem; }
+        .btn { background: var(--cherry-red); color: var(--white); border: none; padding: 0.45rem 0.8rem; border-radius: 8px; cursor: pointer; font-weight:700; }
+        .btn.secondary { background: var(--white); color: var(--cherry-red); border: 1px solid var(--silver); }
+        input[type="file"] { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Temple University Media and Communication Graduate Student Association</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="current-board.html" class="link-active">Current Board</a>
+        <a href="faqs.html">FAQs</a>
+    </nav>
+    <main>
+
+        <div class="board-grid">
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/yelena.JPG" alt="Yelena">
+                <div><strong>President</strong></div>
+                <p class="role-person">Yelena Dzhanova</p>
+                <p class="role-email small"><a href="mailto:yelena.dzhanova@temple.edu">Email me!</a></p>
+                <p class="role-desc small">The board president ensures regular and organized meetings of the board, and moderates board discussions to reach consensus and action items.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/cleves.jpg" alt="Cleves">
+                <div><strong>Vice/Co President</strong></div>
+                <p class="role-person">Cleves Nkie Mongo</p>
+                <p class="role-email small"><a href="mailto:clevesmefiance@temple.edu">Email me!</a></p>
+                <p class="role-desc small">The vice/co president is responsible for managing overarching executive functions of the board including, but not limited to, ongoing special projects, mentorship matches, funding decisions, and moderating board votes.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/keyu.png" alt="Keyu">
+                <div><strong>Treasurer</strong></div>
+                <p class="role-person">Keyu Chen</p>
+                <p class="role-email small"><a href="mailto:keyu.chen0001@temple.edu">Email me!</a></p>
+                <p class="role-desc small">The treasurer is responsible for keeping track of how much funding is available to MCGSA. Additionally, they liaise with the University and the College to manage any joint funding agreements.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/julia.jpeg" alt="Julia">
+                <div><strong>Social Chair</strong></div>
+                <p class="role-person">Julia Longo</p>
+                <p class="role-email small"><a href="mailto:julia.longo@temple.edu">Email me!</a></p>
+                <p class="role-desc small">The social chair is responsible for cultivating a vibrant culture among the PhD student body by hosting events and encouraging mingling between students and faculty.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/yujie.jpg" alt="Yujie">
+                <div><strong>Academic Co-Chair</strong></div>
+                <p class="role-person">Yujie Zhong</p>
+                <p class="role-email small"><a href="mailto:yujie.zzhong@temple.edu">Email me!</a></p>
+                <p class="role-desc small">The academic co-chair is responsible for cultivating a vibrant intellectualism among the PhD student body by organizing the annual Graduate Research Forum and additionally hosting invited talks and skillbuilding sessions for the Klein College as they are able.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/fengyi.jpg" alt="FengYi">
+                <div><strong>Academic Co-Chair</strong></div>
+                <p class="role-person">FengYi Yin</p>
+                <p class="role-email small"><a href="mailto:fengyi.yin@temple.edu">Email me!</a></p>
+                <p class="role-desc small">The academic co-chair is responsible for cultivating a vibrant intellectualism among the PhD student body by organizing the annual Graduate Research Forum and additionally hosting invited talks and skillbuilding sessions for the Klein College as they are able.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/mira.JPG" alt="Mira">
+                <div><strong>Faculty Committee Liaison</strong></div>
+                <p class="role-person">Mira Vuorinen</p>
+                <p class="role-email small"><a href="mailto:mira.vuorinen@temple.edu">Email me!</a></p>
+                <p class="role-desc small">This liasion attends all faculty committee meetings, takes detailed notes to share out at MCGSA board meetings. Additionally, this liasion conveys student concerns and feedback to the faculty at their regular meetings.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/margarita.jpg" alt="Margarita">
+                <div><strong>Academic Committee Liaison</strong></div>
+                <p class="role-person">Margarita Artoglou</p>
+                <p class="role-email small"><a href="mailto:margarita.artoglou@temple.edu">Email me!</a></p>
+                <p class="role-desc small">This liasion attends all curriculum committee meetings, takes detailed notes to share out at MCGSA board meetings. Additionally, this liasion conveys student concerns and feedback on course offerings to the curriculum committee.</p>
+            </div>
+
+            <div class="board-card">
+                <img class="board-photo" src="board photos/anyun.jpg" alt="Anyun">
+                <div><strong>Webmaster</strong></div>
+                <p class="role-person">Anyun Chatterjee</p>
+                <p class="role-email small"><a href="mailto:anyun.chatterjee@temple.edu">Email me!</a></p>
+                <p class="role-desc small">The webmaster maintains this website, among <a href="https://www.anyunchatterjee.com">others.</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        &copy; 2025 Temple University MCGSA
+    </footer>
+
+</body>
+</html>

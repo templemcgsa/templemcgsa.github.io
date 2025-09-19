@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>FAQs — Temple University MCGSA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Small FAQ-specific styles that complement style.css without changing global design */
+        .faq-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 1rem;
+        }
+        .faq-item {
+            border-radius: 12px;
+            border: 1px solid var(--silver);
+            padding: 0.8rem 1rem;
+            background: linear-gradient(180deg, rgba(255,255,255,0.98), var(--white));
+        }
+        .faq-question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            gap: 1rem;
+            font-weight: 700;
+            color: var(--cherry-red);
+        }
+        .faq-answer {
+            margin-top: 0.6rem;
+            color: #222;
+            display: none;
+        }
+        .faq-item[open] .faq-answer {
+            display: block;
+        }
+        .faq-toggle {
+            background: transparent;
+            border: none;
+            color: var(--cherry-red);
+            font-weight: 800;
+            font-size: 1.05rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Temple University Media and Communication Graduate Student Association</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="current-board.html">Current Board</a>
+        <a href="faqs.html" class="link-active">FAQs</a>
+    </nav>
+    <main>
+        <h2 class="mt-2">FAQs</h2>
+        <p class="mb-2">Below are answers to common questions about the MCGSA. Click a question to reveal the answer.</p>
+
+        <ul class="faq-list">
+            <li class="faq-item" id="faq-1">
+                <button class="faq-question" aria-expanded="false" aria-controls="a1" onclick="toggleFaq(event, 'a1')">
+                    <span>Who can join MCGSA?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a1" class="faq-answer" role="region" aria-labelledby="faq-1">
+                    You don't need to "join" MCGSA, as it is an org which automatically represents the interest of all PhD students in the department of Media and Communication at Temple University. If you are interested in taking a larger role, please come to our meetings and volunteer!
+                </div>
+            </li>
+
+            <li class="faq-item" id="faq-2">
+                <button class="faq-question" aria-expanded="false" aria-controls="a2" onclick="toggleFaq(event, 'a2')">
+                    <span>How do I attend meetings?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a2" class="faq-answer" role="region" aria-labelledby="faq-2">
+                    Meetings are usually held virtually on Microsoft Teams on the 4th Friday of every month at 1pm. The Teams link to join this meeting is <a href="https://teams.microsoft.com/dl/launcher/launcher.html?url=%2F_%23%2Fl%2Fmeetup-join%2F19%3Ameeting_OGI5NmM2NDYtYzZjNS00YmNkLWJhZTctNmQ1MTM1YjZkNGY0%40thread.v2%2F0%3Fcontext%3D%257b%2522Tid%2522%253a%2522716e81ef-b522-4473-8e31-10bd02ccf6e5%2522%252c%2522Oid%2522%253a%25220af83b02-6f26-446e-8f21-eb16ab7f0981%2522%257d%26anon%3Dtrue&type=meetup-join&deeplinkId=411b66bb-19b3-4b2b-8aaa-8a7d4ba505ee&directDl=true&msLaunch=true&enableMobilePage=true&suppressPrompt=true">here.</a>
+                </div>
+            </li>
+
+            <li class="faq-item" id="faq-3">
+                <button class="faq-question" aria-expanded="false" aria-controls="a3" onclick="toggleFaq(event, 'a3')">
+                    <span>How can I get involved?</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a3" class="faq-answer" role="region" aria-labelledby="faq-3">
+                    You can volunteer for events, serve on committees, or run for a board position. Elections for positions are held every April.
+                </div>
+            </li>
+
+        </ul>
+    </main>
+    <footer>
+        &copy; 2025 Temple University MCGSA
+    </footer>
+
+    <script>
+        function toggleFaq(event, id) {
+            var answer = document.getElementById(id);
+            var btn = event.currentTarget;
+            var expanded = btn.getAttribute('aria-expanded') === 'true';
+            // close all faq answers
+            document.querySelectorAll('.faq-answer').forEach(function(el){
+                el.style.display = 'none';
+                var parentBtn = el.previousElementSibling;
+                if (parentBtn && parentBtn.classList.contains('faq-question')) {
+                    parentBtn.setAttribute('aria-expanded', 'false');
+                    var toggle = parentBtn.querySelector('.faq-toggle');
+                    if (toggle) toggle.textContent = '+';
+                }
+            });
+
+            if (!expanded) {
+                answer.style.display = 'block';
+                btn.setAttribute('aria-expanded', 'true');
+                var t = btn.querySelector('.faq-toggle'); if (t) t.textContent = '−';
+            } else {
+                answer.style.display = 'none';
+                btn.setAttribute('aria-expanded', 'false');
+                var t2 = btn.querySelector('.faq-toggle'); if (t2) t2.textContent = '+';
+            }
+        }
+    </script>
+</body>
+</html>
