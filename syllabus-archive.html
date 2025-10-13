@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Syllabus Archive — Temple MCGSA</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .syllabus-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+        .syllabus-item { background: var(--white); border: 1px solid var(--silver); padding: 1rem; border-radius: 12px; box-shadow: var(--shadow); }
+        .meta { color: var(--metallic-silver); font-size: 0.95rem; margin-bottom: 0.5rem; }
+
+        /* FAQ-style accordion (matches `faqs.html`) */
+        .faq-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; }
+        .faq-item { border-radius: 12px; border: 1px solid var(--silver); padding: 0.8rem 1rem; background: linear-gradient(180deg, rgba(255,255,255,0.98), var(--white)); }
+        .faq-question { display: flex; justify-content: space-between; align-items: center; cursor: pointer; gap: 1rem; font-weight: 700; color: var(--cherry-red); background: transparent; border: none; width: 100%; text-align: left; padding: 0; }
+        .faq-answer { margin-top: 0.6rem; color: #222; display: none; }
+        .faq-toggle { background: transparent; border: none; color: var(--cherry-red); font-weight: 800; font-size: 1.05rem; }
+        .faq-item[open] .faq-answer { display: block; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Temple University Media and Communication Graduate Student Association</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="current-board.html">Current Board</a>
+        <a href="syllabus-archive.html" class="link-active">Syllabus Archive</a>
+        <a href="faqs.html">FAQs</a>
+    </nav>
+    <main>
+        <h2 class="mt-2">Syllabus Archive</h2>
+        <p class="mb-2">Below are syllabi from past courses collected by current and past M&C PhD students. The archive relies on all of us for maintenance and valye, so if you have a syllabus not in this archive, please send it to the <a href="mailto:tuo91168@temple.edu">webmaster</a>.</p>
+    <div class="two-cols">
+        <div class="col">
+            <h3 class="mt-2">Electives</h3>
+
+            <ul class="faq-list" role="list">
+            
+            <li class="faq-item" id="s-9203">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9203" onclick="toggleFaq(event, 'a-9203')">
+                    <span>9203 — Survey Design</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9203" class="faq-answer" role="region" aria-labelledby="s-9203">
+                    <ul>
+                        <li><a href="syllabi/9203_Survey-Design_LaMarre_S24.pdf">LaMarre_S24</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9205">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9205" onclick="toggleFaq(event, 'a-9205')">
+                    <span>9205 — Content Analysis</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9205" class="faq-answer" role="region" aria-labelledby="s-9205">
+                    <ul>
+                        <li><a href="syllabi/9205_Content-Analysis_Castonguay_F24.pdf">Castonguay_F24</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9207">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9207" onclick="toggleFaq(event, 'a-9207')">
+                    <span>9207 — Critical Textual Analysis</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9207" class="faq-answer" role="region" aria-labelledby="s-9207">
+                    <ul>
+                        <li><a href="syllabi/9207_Critical-Textual-Analysis_Creech_F22.pdf">Creech_F22</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9505">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9505" onclick="toggleFaq(event, 'a-9505')">
+                    <span>9505 — Psychological Processes and Media</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9505" class="faq-answer" role="region" aria-labelledby="s-9505">
+                    <ul>
+                        <li><a href="syllabi/9505_Psychological-Processes-and-Media_Lee_F23.pdf">Lee_F23</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9525">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9525" onclick="toggleFaq(event, 'a-9525')">
+                    <span>9525 — Communication Institutions</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9525" class="faq-answer" role="region" aria-labelledby="s-9525">
+                    <ul>
+                        <li><a href="syllabi/9525_Communication-Institutions_Sridharan_F25.pdf">Sridharan_F25</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9612">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9612" onclick="toggleFaq(event, 'a-9612')">
+                    <span>9612 — Critical Analysis of Mass Media</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9612" class="faq-answer" role="region" aria-labelledby="s-9612">
+                    <ul>
+                        <li><a href="syllabi/9612_Critical-Analysis-of-Mass-Media_Jacobson_F22.pdf">Jacobson_F22</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9647">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9647" onclick="toggleFaq(event, 'a-9647')">
+                    <span>9647 — Political Communication</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9647" class="faq-answer" role="region" aria-labelledby="s-9647">
+                    <ul>
+                        <li><a href="syllabi/9647_Political-Communication_LaMarre_S25.pdf">LaMarre_S25</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9707">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9707" onclick="toggleFaq(event, 'a-9707')">
+                    <span>9707 — Social Influence</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9707" class="faq-answer" role="region" aria-labelledby="s-9707">
+                    <ul>
+                        <li><a href="syllabi/9707_Social-Influence_Hardy_F22.pdf">Hardy_F22</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-97079">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-97079" onclick="toggleFaq(event, 'a-97079')">
+                    <span>9709 — Media Globalization</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-97079" class="faq-answer" role="region" aria-labelledby="s-97079">
+                    <ul>
+                        <li><a href="syllabi/9709_Media-Globalization_Osman_F24.pdf">Osman_F24</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9725">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9725" onclick="toggleFaq(event, 'a-9725')">
+                    <span>9725 — Media Identity Representation</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9725" class="faq-answer" role="region" aria-labelledby="s-9725">
+                    <ul>
+                        <li><a href="syllabi/9725_Media-Identity-Representation_Rodriguez_F21.pdf">Rodriguez_F21</a></li>
+                        <li><a href="syllabi/9725_Media-Identity-Representation_Darling-Wolf_F23.pdf">Darling-Wolf_F23</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9735">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9735" onclick="toggleFaq(event, 'a-9735')">
+                    <span>9735 — Emerging Media and Communication</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9735" class="faq-answer" role="region" aria-labelledby="s-9735">
+                    <ul>
+                        <li><a href="syllabi/9735_Emerging-Media-and-Communciation_Mann_S24.pdf">Mann_S24</a></li>
+                    </ul>
+                </div>
+            </li>
+
+            <li class="faq-item" id="s-9749">
+                <button class="faq-question" aria-expanded="false" aria-controls="a-9749" onclick="toggleFaq(event, 'a-9749')">
+                    <span>9749 — Social Media Analytics</span>
+                    <span class="faq-toggle">+</span>
+                </button>
+                <div id="a-9749" class="faq-answer" role="region" aria-labelledby="s-9749">
+                    <ul>
+                        <li><a href="syllabi/9749_Social-Media-Analytics_Iliadis_F23.pdf">Iliadis_F23</a></li>
+                    </ul>
+                </div>
+            </li>
+            </ul>
+        </div>
+
+        <div class="col">
+            <h3 class="mt-2">Core Courses</h3>
+            <ul class="faq-list" role="list">
+        <li class="faq-item" id="s-8985">
+            <button class="faq-question" aria-expanded="false" aria-controls="a-8985" onclick="toggleFaq(event, 'a-8985')">
+                <span>8985 — Teaching in Higher Education ("Pedagogy")</span>
+                <span class="faq-toggle">+</span>
+            </button>
+            <div id="a-8985" class="faq-answer" role="region" aria-labelledby="s-8985">
+                <ul>
+                    <li><a href="syllabi/8985_Teaching-in-Higher-Education_Molyneux_F23.pdf">Molyneux_F23</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="faq-item" id="s-9001">
+            <button class="faq-question" aria-expanded="false" aria-controls="a-9001" onclick="toggleFaq(event, 'a-9001')">
+                <span>9001 — Communication Theory</span>
+                <span class="faq-toggle">+</span>
+            </button>
+            <div id="a-9001" class="faq-answer" role="region" aria-labelledby="s-9001">
+                <ul>
+                    <li><a href="syllabi/9001_Communication-Theory-I_Darling-Wolf_F22.pdf">Darling-Wolf_F22</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="faq-item" id="s-9002">
+            <button class="faq-question" aria-expanded="false" aria-controls="a-9002" onclick="toggleFaq(event, 'a-9002')">
+                <span>9002 — Research Communication I ("Quant Methods")</span>
+                <span class="faq-toggle">+</span>
+            </button>
+            <div id="a-9002" class="faq-answer" role="region" aria-labelledby="s-9002">
+                <ul>
+                    <li><a href="syllabi/9002_Researching-Communication-I_Hardy_F23.pdf">Hardy_F23</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="faq-item" id="s-9003">
+            <button class="faq-question" aria-expanded="false" aria-controls="a-9003" onclick="toggleFaq(event, 'a-9003')">
+                <span>9003 — Doctoral Colloquium</span>
+                <span class="faq-toggle">+</span>
+            </button>
+            <div id="a-9003" class="faq-answer" role="region" aria-labelledby="s-9003">
+                <ul>
+                    <li><a href="syllabi/9003_Colloquium_Baym_F23.pdf">Baym_F23</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="faq-item" id="s-9005">
+            <button class="faq-question" aria-expanded="false" aria-controls="a-9005" onclick="toggleFaq(event, 'a-9005')">
+                <span>9005 — Colloquium II</span>
+                <span class="faq-toggle">+</span>
+            </button>
+            <div id="a-9005" class="faq-answer" role="region" aria-labelledby="s-9005">
+                <ul>
+                    <li><a href="syllabi/9005_Colloquium-II_Baym_S25.pdf">Baym_S25</a></li>
+                </ul>
+            </div>
+        </li>
+
+        <li class="faq-item" id="s-9102">
+            <button class="faq-question" aria-expanded="false" aria-controls="a-9102" onclick="toggleFaq(event, 'a-9102')">
+                <span>9102 — Researching Communication II ("Qual Methods")</span>
+                <span class="faq-toggle">+</span>
+            </button>
+            <div id="a-9102" class="faq-answer" role="region" aria-labelledby="s-9102">
+                <ul>
+                    <li><a href="syllabi/9102_Researching-Communication_Wenzel_S22.pdf">Wenzel_S22</a></li>
+                </ul>
+            </div>
+        </li>
+            </ul>
+        </div>
+    </div>
+
+        <script>
+            function toggleFaq(event, id) {
+                var answer = document.getElementById(id);
+                var btn = event.currentTarget;
+                var expanded = btn.getAttribute('aria-expanded') === 'true';
+                // close all faq answers
+                document.querySelectorAll('.faq-answer').forEach(function(el){
+                    el.style.display = 'none';
+                    var parentBtn = el.previousElementSibling;
+                    if (parentBtn && parentBtn.classList.contains('faq-question')) {
+                        parentBtn.setAttribute('aria-expanded', 'false');
+                        var toggle = parentBtn.querySelector('.faq-toggle');
+                        if (toggle) toggle.textContent = '+';
+                    }
+                });
+
+                if (!expanded) {
+                    answer.style.display = 'block';
+                    btn.setAttribute('aria-expanded', 'true');
+                    var t = btn.querySelector('.faq-toggle'); if (t) t.textContent = '−';
+                } else {
+                    answer.style.display = 'none';
+                    btn.setAttribute('aria-expanded', 'false');
+                    var t2 = btn.querySelector('.faq-toggle'); if (t2) t2.textContent = '+';
+                }
+            }
+        </script>
+
+    </main>
+    <footer>
+        &copy; 2025 Temple University MCGSA
+    </footer>
+</body>
+</html>
