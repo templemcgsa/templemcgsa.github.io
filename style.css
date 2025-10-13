@@ -156,3 +156,14 @@ main a:focus {
         grid-template-columns: 1fr;
     }
 }
+
+/* Tighten spacing for the syllabus archive intro and headings */
+main > p.mb-2 { margin-bottom: 0.8rem; }
+.two-cols h3 { margin-top: 0.6rem; }
+
+/* Muted, smaller intro for archive pages */
+main > p.mb-2.archive-intro,
+main > p.archive-intro {
+    font-size: 0.95rem;
+    color: rgba(0,0,0,0.6);
+}
