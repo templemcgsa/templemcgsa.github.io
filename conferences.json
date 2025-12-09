@@ -1,0 +1,104 @@
+{
+  "last_updated": "2025-12-09T00:00:00",
+  "conferences": [
+    {
+      "name": "International Communication Association (ICA)",
+      "abbreviation": "ICA",
+      "website": "https://www.icahdq.org",
+      "next_conference": "May 2026",
+      "next_deadline": "October 2025",
+      "typical_month": "May",
+      "typical_deadline_month": "October",
+      "description": "ICA is one of the largest and most prestigious international conferences in communication studies. Research presented includes interpersonal and organizational communication, media psychology and effects, political communication, health communication, computational methods, critical/cultural studies, and communication technology. It provides excellent networking opportunities with scholars from around the world.",
+      "research_types": ["interpersonal communication", "organizational communication", "media psychology", "political communication", "health communication", "computational methods", "critical/cultural studies", "communication technology"]
+    },
+    {
+      "name": "National Communication Association (NCA)",
+      "abbreviation": "NCA",
+      "website": "https://www.natcom.org",
+      "next_conference": "November 2026",
+      "next_deadline": "March 2026",
+      "typical_month": "November",
+      "typical_deadline_month": "March",
+      "description": "NCA is the largest communication association in the United States. Research presented includes rhetorical theory and criticism, media studies, public address, interpersonal and family communication, organizational communication, performance studies, intercultural communication, and communication pedagogy. The convention features diverse panels, workshops, and networking events.",
+      "research_types": ["rhetorical theory", "media studies", "public address", "interpersonal communication", "organizational communication", "performance studies", "intercultural communication", "communication pedagogy"]
+    },
+    {
+      "name": "Association for Education in Journalism and Mass Communication (AEJMC)",
+      "abbreviation": "AEJMC",
+      "website": "https://www.aejmc.org",
+      "next_conference": "August 2026",
+      "next_deadline": "March 2026",
+      "typical_month": "August",
+      "typical_deadline_month": "March",
+      "description": "AEJMC focuses on journalism and mass communication education and research. Research presented includes news reporting and editing, media law and ethics, advertising, public relations, visual communication, digital/social media journalism, media history, and mass communication theory. It's particularly valuable for those interested in journalism studies and media industries.",
+      "research_types": ["journalism", "media law", "advertising", "public relations", "visual communication", "social media journalism", "media history", "mass communication theory"]
+    },
+    {
+      "name": "Society for Cinema and Media Studies (SCMS)",
+      "abbreviation": "SCMS",
+      "website": "https://www.cmstudies.org",
+      "next_conference": "March 2026",
+      "next_deadline": "July 2025",
+      "typical_month": "March",
+      "typical_deadline_month": "July",
+      "description": "SCMS is the premier conference for film and media studies scholars. Research presented includes film history and historiography, film theory and philosophy, genre studies, stardom and authorship, documentary studies, television studies, digital media, gaming, animation, and transnational cinema. It covers contemporary media culture from diverse critical and cultural perspectives.",
+      "research_types": ["film history", "film theory", "genre studies", "documentary studies", "television studies", "digital media", "gaming", "animation", "transnational cinema"]
+    },
+    {
+      "name": "Association of Internet Researchers (AoIR)",
+      "abbreviation": "AoIR",
+      "website": "https://aoir.org",
+      "next_conference": "October 2026",
+      "next_deadline": "April 2026",
+      "typical_month": "October",
+      "typical_deadline_month": "April",
+      "description": "AoIR brings together researchers studying the internet and digital media from interdisciplinary perspectives. Research presented includes social media platforms and practices, digital culture and fandom, internet governance and policy, online communities and networks, algorithms and AI, platform studies, digital activism, data studies, and emerging technologies.",
+      "research_types": ["social media", "digital culture", "internet governance", "online communities", "algorithms", "platform studies", "digital activism", "data studies"]
+    },
+    {
+      "name": "Mid-Atlantic Popular & American Culture Association (MAPACA)",
+      "abbreviation": "MAPACA",
+      "website": "https://mapaca.net",
+      "next_conference": "November 2025",
+      "next_deadline": "July 2025",
+      "typical_month": "November",
+      "typical_deadline_month": "July",
+      "description": "MAPACA is a regional conference focusing on popular culture and American culture studies. Research presented includes media fandom, popular music, film and television studies, digital culture, comics and graphic novels, food culture, sports culture, and material culture. It's known for its welcoming atmosphere and interdisciplinary approach.",
+      "research_types": ["media fandom", "popular music", "film and television", "digital culture", "comics", "food culture", "sports culture", "material culture"]
+    },
+    {
+      "name": "Popular Culture Association (PCA)",
+      "abbreviation": "PCA",
+      "website": "https://pcaaca.org",
+      "next_conference": "April 2026",
+      "next_deadline": "October 2025",
+      "typical_month": "April",
+      "typical_deadline_month": "October",
+      "description": "PCA is the national conference for popular culture studies. Research presented includes film and television, music and sound studies, gaming and esports, social media and digital culture, fan studies, genre studies, celebrity culture, and representations in media. It welcomes diverse methodological approaches from textual analysis to ethnography.",
+      "research_types": ["film and television", "music studies", "gaming", "social media", "fan studies", "genre studies", "celebrity culture"]
+    },
+    {
+      "name": "Global Fusion",
+      "abbreviation": "Global Fusion",
+      "website": "https://www.ut.edu/global-fusion",
+      "next_conference": "December 2025",
+      "next_deadline": "September 2025",
+      "typical_month": "December",
+      "typical_deadline_month": "September",
+      "description": "Global Fusion is an interdisciplinary conference examining globalization, culture, and communication. Research presented includes transnational media flows, global journalism, intercultural communication, diaspora and migration studies, international political communication, global media industries, and cross-cultural media consumption. It emphasizes international and comparative perspectives.",
+      "research_types": ["transnational media", "global journalism", "intercultural communication", "diaspora studies", "international political communication", "global media industries"]
+    },
+    {
+      "name": "American Journalism Historians Association (AJHA)",
+      "abbreviation": "AJHA",
+      "website": "https://ajha.org",
+      "next_conference": "October 2026",
+      "next_deadline": "May 2026",
+      "typical_month": "October",
+      "typical_deadline_month": "May",
+      "description": "AJHA focuses on journalism and media history scholarship. Research presented includes press history, media biography, advertising and public relations history, media technology history, journalism ethics and law history, photojournalism history, and broadcast history. It welcomes archival research, oral histories, and historical analysis of media institutions and practices.",
+      "research_types": ["press history", "media biography", "advertising history", "media technology history", "journalism ethics history", "photojournalism history", "broadcast history"]
+    }
+  ]
+}
